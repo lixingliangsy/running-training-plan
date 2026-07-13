@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Training Plan - Pricing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pricing-card.featured {
+            border: 3px solid #667eea;
+            position: relative;
+        }
+        
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #667eea;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .plan-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        
+        .plan-price span {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .plan-features {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .plan-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: #666;
+        }
+        
+        .plan-features li::before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .btn-subscribe {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: opacity 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-subscribe:hover {
+            opacity: 0.9;
+        }
+        
+        .featured .btn-subscribe {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .free-card .btn-subscribe {
+            background: #10b981;
+        }
+        
+        nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 1;
+        }
+        
+        .faq-link {
+            text-align: center;
+            margin-top: 60px;
+            color: white;
+        }
+        
+        .faq-link a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Running Training Plan</h1>
+            <p>Choose the plan that works for you</p>
+        </header>
+        
+        <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="pricing-card free-card">
+                <div class="plan-name">Free</div>
+                <div class="plan-price">$0<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>5 exports per month</li>
+                    <li>Basic templates</li>
+                    <li>Community support</li>
+                    <li>Watermark on exports</li>
+                </ul>
+                <a href="#" class="btn-subscribe">Get Started Free</a>
+            </div>
+            
+            <!-- Pro Plan (Featured) -->
+            <div class="pricing-card featured">
+                <div class="plan-name">Pro</div>
+                <div class="plan-price">$19<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>Unlimited exports</li>
+                    <li>Premium templates</li>
+                    <li>Priority support</li>
+                    <li>No watermark</li>
+                    <li>AI-powered features</li>
+                    <li>API access</li>
+                </ul>
+                <a href="#stripe-pro-running-training-plan" class="btn-subscribe">Subscribe to Pro</a>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="plan-name">Enterprise</div>
+                <div class="plan-price">$79<span>/month</span></div>
+                <ul class="plan-features">
+                    <li>Everything in Pro</li>
+                    <li>Team collaboration</li>
+                    <li>Custom integrations</li>
+                    <li>Dedicated support</li>
+                    <li>SLA guarantee</li>
+                    <li>White-label option</li>
+                </ul>
+                <a href="#stripe-enterprise-running-training-plan" class="btn-subscribe">Contact Sales</a>
+            </div>
+        </div>
+        
+        <div class="faq-link">
+            <p>Have questions? <a href="./faq.html">Check our FAQ</a> or <a href="./support.html">contact support</a></p>
+        </div>
+        
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="./support.html">Support</a>
+            <a href="./blog/complete-guide-2026.html">Blog</a>
+        </nav>
+    </div>
+    
+    <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Running Training Plan",
+        "description": "Running Training Plan - Micro SaaS solution",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Free",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            {
+                "@type": "Offer",
+                "name": "Pro",
+                "price": "19",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31"
+            },
+            {
+                "@type": "Offer",
+                "name": "Enterprise",
+                "price": "79",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
