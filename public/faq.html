@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Running Training Plan</title>
+    <meta name="description" content="Get answers to frequently asked questions about Running Training Plan. Learn about running data parsing, training plan generation, progress visualization, and more.">
+    
+    <!-- JSON-LD Schema for FAQPage -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "1. How does the running data parsing feature work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can upload your running data in GPX or TCX format from your GPS device or smartwatch. Our system will automatically parse the data and extract key information including distance, pace, elevation, heart rate, and route. The parsed data can then be used to generate training plans and visualize progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "2. What file formats are supported for running data upload?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We support GPX (GPS Exchange Format) and TCX (Training Center XML) formats. These are standard formats used by most GPS devices and running apps including Garmin, Strava, Apple Health, and Nike Run Club. After uploading, the system extracts trackpoints, lap data, and statistics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "3. How does the AI training plan generator work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our AI generates personalized training plans based on your goal (5K, 10K, Half Marathon, Marathon), current fitness level, weekly mileage, available training days, and experience level. The algorithm uses running economy theory to create progressive weekly plans with easy runs, interval training, tempo runs, and long runs. Plans auto-adjust based on your performance data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4. What visualization charts are available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide multiple progress visualization charts: (1) Weekly Mileage Chart - track planned vs. actual mileage; (2) Pace Trend Chart - monitor pace improvement over time; (3) Training Completion Chart - see your weekly training completion rate; (4) Heart Rate Trend Chart - track cardiovascular fitness; (5) Weekly Summary - overview of current week's training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "5. Can I track my training progress over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our progress visualization feature provides comprehensive tracking: mileage accumulation trends, pace trends (seconds per km), training completion rates, heart rate trends, and overall statistics including total runs, total distance, average pace, and training streak. Data is displayed in interactive charts powered by Chart.js."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "6. Is my running data secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, your running data is private and secure. We use encryption to protect your data. Your running data is only used to provide training plan generation and progress visualization and is never shared with third parties without your consent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "7. Can I export my training plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can export your training plan to PDF or sync it with supported running apps. The export includes weekly schedules, workout details, pace targets, and training tips. You can also share your plan with coaches or running groups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "8. How can I get customer support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free users can access our FAQ and community forum. Premium users receive email support within 24 hours. Elite users get 1-on-1 video calls with certified running coaches. Contact us at support@runningtrainingplan.com."
+      }
+    }
+  ]
+}
+    </script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f9fafb;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #111827;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+        .faq-item {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+        }
+        .faq-item h3 {
+            color: #1f2937;
+            margin-top: 0;
+        }
+        .answer-summary {
+            font-size: 1.1em;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        details {
+            margin-top: 10px;
+        }
+        summary {
+            cursor: pointer;
+            color: #3b82f6;
+            font-weight: 500;
+        }
+        .answer-details {
+            margin-top: 10px;
+            padding: 15px;
+            background: white;
+            border-radius: 4px;
+        }
+        .implemented {
+            background: #d1fae5;
+            padding: 10px;
+            border-left: 4px solid #10b981;
+            margin: 10px 0;
+            color: #065f46;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p class="intro">Everything you need to know about Running Training Plan. Can't find the answer? <a href="./support.html">Contact our support team</a>.</p>
+        
+        <div class="implemented" style="margin: 10px 0; padding: 15px; border-radius: 5px;">
+            <strong>✅ All core features are now implemented!</strong> Running data parsing, training plan generation, and progress visualization are fully functional.
+        </div>
+        
+        <div class="faq-list">
+            
+        <div class="faq-item">
+            <h3>1. How does the running data parsing feature work?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> You can upload your running data in GPX or TCX format from your GPS device or smartwatch. Our system will automatically parse the data and extract key information including distance, pace, elevation, heart rate, and route.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Running Data Parsing Steps:</strong></p>
+                        <ol>
+                            <li><strong>Upload:</strong> Click "Upload Data" and select your GPX or TCX file</li>
+                            <li><strong>Parse:</strong> Our system uses <code>xml2js</code> to parse the XML data</li>
+                            <li><strong>Extract:</strong> Key information is automatically extracted:
+                                <ul>
+                                    <li>Trackpoints (latitude, longitude, elevation, time)</li>
+                                    <li>Lap data (total time, distance, calories, heart rate)</li>
+                                    <li>Statistics (total distance, elevation gain, average pace, total time)</li>
+                                </ul>
+                            </li>
+                            <li><strong>Review:</strong> Check the extracted data and use it for training plan generation</li>
+                        </ol>
+                        <p><strong>Supported Formats:</strong> GPX (GPS Exchange Format), TCX (Training Center XML)</p>
+                        <p><strong>API Endpoint:</strong> <code>POST /api/parse-data</code></p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>2. What file formats are supported for running data upload?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> We support GPX and TCX formats. These are standard formats used by most GPS devices and running apps. After uploading, the system extracts trackpoints, lap data, and statistics.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Supported File Types:</strong></p>
+                        <table style="width:100%; border-collapse: collapse; margin-top: 10px;">
+                            <tr style="background: #f3f4f6;">
+                                <th style="padding: 8px; text-align: left; border: 1px solid #d1d5db;">Format</th>
+                                <th style="padding: 8px; text-align: left; border: 1px solid #d1d5db;">Extension</th>
+                                <th style="padding: 8px; text-align: left; border: 1px solid #d1d5db;">Common Devices</th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">GPX</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">.gpx</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Garmin, Strava, General GPS</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">TCX</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">.tcx</td>
+                                <td style="padding: 8px; border: 1px solid #d1d5db;">Garmin, TrainingPeaks, Coros</td>
+                            </tr>
+                        </table>
+                        <p style="margin-top: 15px;"><strong>Note:</strong> For best results, export data directly from your device or app in standard GPX or TCX format.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>3. How does the AI training plan generator work?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Our AI generates personalized training plans based on your goal, current fitness level, weekly mileage, available training days, and experience level. The algorithm creates progressive weekly plans with various workout types.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Training Plan Generation Features:</strong></p>
+                        <ul>
+                            <li><strong>Goal Selection:</strong> 5K, 10K, Half Marathon, Marathon</li>
+                            <li><strong>Fitness Assessment:</strong> Beginner, Intermediate, Advanced</li>
+                            <li><strong>Weekly Mileage:</strong> Customizable (default: 20km/week)</li>
+                            <li><strong>Available Days:</strong> 1-7 days per week</li>
+                            <li><strong>Workout Types:</strong>
+                                <ul>
+                                    <li>Easy Runs (conversational pace)</li>
+                                    <li>Intervals (speed work)</li>
+                                    <li>Tempo Runs (comfortably hard)</li>
+                                    <li>Long Runs (endurance building)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><strong>Training Plan Includes:</strong></p>
+                        <ul>
+                            <li>Weekly schedules with specific workouts</li>
+                            <li>Pace targets for each workout type</li>
+                            <li>Long run distance progression</li>
+                            <li>Recovery week scheduling</li>
+                            <li>Training tips and advice</li>
+                        </ul>
+                        <p><strong>API Endpoint:</strong> <code>POST /api/generate-plan</code></p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>4. What visualization charts are available?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented - Progress Visualization</div>
+                <p class="answer-summary"><strong>Answer:</strong> We provide multiple progress visualization charts: weekly mileage chart, pace trend chart, training completion chart, heart rate trend chart, and weekly summary.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Available Charts:</strong></p>
+                        <ol>
+                            <li><strong>Weekly Mileage Chart (Line Chart):</strong> Track planned vs. actual weekly mileage</li>
+                            <li><strong>Pace Trend Chart (Line Chart):</strong> Monitor pace improvement over time (seconds per km)</li>
+                            <li><strong>Training Completion Chart (Bar Chart):</strong> See your weekly training completion rate</li>
+                            <li><strong>Heart Rate Trend Chart (Line Chart):</strong> Track cardiovascular fitness (if HR data available)</li>
+                            <li><strong>Weekly Summary:</strong> Overview of current week's training</li>
+                        </ol>
+                        <p><strong>Chart Features:</strong></p>
+                        <ul>
+                            <li>Interactive charts powered by Chart.js</li>
+                            <li>Responsive design (mobile-friendly)</li>
+                            <li>Multiple datasets comparison</li>
+                            <li>Tooltips with detailed information</li>
+                        </ul>
+                        <p><strong>API Endpoint:</strong> <code>POST /api/progress</code></p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>5. Can I track my training progress over time?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Yes, our progress visualization feature provides comprehensive tracking: mileage accumulation trends, pace trends, training completion rates, heart rate trends, and overall statistics.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Progress Tracking Includes:</strong></p>
+                        <ul>
+                            <li><strong>Mileage Accumulation:</strong> Weekly planned vs. actual mileage with trend analysis</li>
+                            <li><strong>Pace Trends:</strong> Seconds per km over time, distance correlation</li>
+                            <li><strong>Completion Rates:</strong> Planned vs. completed training days per week</li>
+                            <li><strong>Heart Rate Trends:</strong> Average and max HR over time (requires HR monitor)</li>
+                            <li><strong>Overall Statistics:</strong>
+                                <ul>
+                                    <li>Total runs completed</li>
+                                    <li>Total distance covered</li>
+                                    <li>Average pace</li>
+                                    <li>Training streak (consecutive days)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>All data is displayed in interactive charts and updated in real-time as you log your runs.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>6. Is my running data secure?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented - Privacy Protected</div>
+                <p class="answer-summary"><strong>Answer:</strong> Yes, your running data is private and secure. We use encryption to protect your data. Your running data is only used to provide training plan generation and progress visualization.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Privacy Features:</strong></p>
+                        <ul>
+                            <li><strong>Data Encryption:</strong> All data is encrypted in transit and at rest</li>
+                            <li><strong>Private by Default:</strong> Your running data is only visible to you</li>
+                            <li><strong>No Data Sharing:</strong> We don't share your data with third parties</li>
+                            <li><strong>Secure Export:</strong> Exported files are generated temporarily and not stored on our servers</li>
+                        </ul>
+                        <p>Your privacy is our priority. You control your data.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>7. Can I export my training plan?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Yes, you can export your training plan to PDF or sync it with supported running apps. The export includes weekly schedules, workout details, pace targets, and training tips.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Export Options:</strong></p>
+                        <ul>
+                            <li><strong>PDF Export:</strong> Professional formatting, printable</li>
+                            <li><strong>Google Sheets:</strong> Integration available (Premium+)</li>
+                            <li><strong>TrainingPeaks:</strong> Sync with TrainingPeaks account</li>
+                            <li><strong>Share Link:</strong> Generate shareable link for coaches</li>
+                        </ul>
+                        <p><strong>Export Includes:</strong></p>
+                        <ul>
+                            <li>Weekly training schedules</li>
+                            <li>Workout descriptions and targets</li>
+                            <li>Pace and heart rate zones</li>
+                            <li>Training tips and notes</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <h3>8. How can I get customer support?</h3>
+            <div class="answer">
+                <div class="implemented" style="margin: 10px 0;"><strong>✅ Status:</strong> Implemented</div>
+                <p class="answer-summary"><strong>Answer:</strong> Free users can access our FAQ and community forum. Premium users receive email support within 24 hours. Elite users get 1-on-1 video calls with certified running coaches.</p>
+                <details>
+                    <summary>Read detailed explanation</summary>
+                    <div class="answer-details">
+                        <p><strong>Support Options:</strong></p>
+                        <ul>
+                            <li><strong>FAQ:</strong> This page! Find answers to common questions.</li>
+                            <li><strong>Email Support:</strong> support@runningtrainingplan.com</li>
+                        </ul>
+                        <p><strong>Response Times:</strong></p>
+                        <ul>
+                            <li><strong>Free Users:</strong> Community forum access</li>
+                            <li><strong>Premium Users:</strong> Email support within 24 hours</li>
+                            <li><strong>Elite Users:</strong> 1-on-1 video calls with coaches</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</body>
+</html>
