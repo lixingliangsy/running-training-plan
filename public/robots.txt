@@ -1,0 +1,26 @@
+# robots.txt for running-training-plan
+# Generated: 2026-07-03
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://running-training-plan.vercel.app/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Allow all AI bots (for GEO optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
