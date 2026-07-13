@@ -1,0 +1,263 @@
+
+> running-training-plan@1.0.0 dev
+> next dev -p 3001
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3001
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 7.6s
+ ○ Compiling /api/health ...
+ ✓ Compiled /api/health in 1349ms (62 modules)
+ GET /api/health 200 in 1521ms
+ GET /api/health 200 in 8ms
+ ○ Compiling / ...
+ ✓ Compiled / in 6.7s (277 modules)
+ GET / 200 in 7044ms
+ GET /api/health 200 in 27ms
+ GET / 200 in 42ms
+ GET / 200 in 31ms
+ GET /api/health 200 in 7ms
+ GET / 200 in 15ms
+ GET / 200 in 27ms
+ GET / 200 in 18ms
+ ✓ Compiled /api/generate-plan in 497ms (68 modules)
+ ⨯ Error: Cannot find module './chunks/undefined'
+Require stack:
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-api-runtime.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\pages\api\generate-plan.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\future\helpers\module-loader\node-module-loader.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\future\helpers\module-loader\route-module-loader.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\next-server.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\next-dev-server.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\next.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at o.f.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-api-runtime.js:1:878)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-api-runtime.js:1:359
+    at Array.reduce (<anonymous>)
+    at o.e (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-api-runtime.js:1:338)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\webpack-api-runtime.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\pages\\api\\generate-plan.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\future\\helpers\\module-loader\\node-module-loader.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\future\\helpers\\module-loader\\route-module-loader.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\next-server.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\next-dev-server.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\next.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 983ms (281 modules)
+ POST /api/generate-plan 500 in 3293ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 6.2s (689 modules)
+ GET / 404 in 7132ms
+ GET /api/health 200 in 63ms
+ ○ Compiling /api/progress ...
+ ✓ Compiled /api/progress in 3.3s (693 modules)
+ GET /api/features 200 in 3391ms
+ GET /api/progress?userId=test 405 in 3347ms
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\pages\_document.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\load-components.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\build\utils.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-middleware.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at __webpack_require__.f.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:198:28)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\webpack-runtime.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\pages\\_document.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\require.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\load-components.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\build\\utils.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\pages\_document.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\load-components.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\build\utils.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-middleware.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at __webpack_require__.f.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:198:28)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\webpack-runtime.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\pages\\_document.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\require.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\load-components.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\build\\utils.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET / 500 in 4495ms
+ POST /api/progress 400 in 59ms
+Generate plan error: ReferenceError: goal is not defined
+    at calculateBasePace (webpack-internal:///(api)/./pages/api/generate-plan.js:140:40)
+    at generateTrainingPlan (webpack-internal:///(api)/./pages/api/generate-plan.js:53:22)
+    at handler (webpack-internal:///(api)/./pages/api/generate-plan.js:21:22)
+    at K (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\compiled\next-server\pages-api.runtime.dev.js:21:2877)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async U.render (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\compiled\next-server\pages-api.runtime.dev.js:21:3955)
+    at async DevServer.runApi (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\next-server.js:603:9)
+    at async NextNodeServer.handleCatchallRenderRequest (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\next-server.js:269:37)
+    at async DevServer.handleRequestImpl (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\base-server.js:818:17)
+    at async E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js:383:13)
+ POST /api/generate-plan 500 in 18ms
+ ✓ Compiled in 506ms (283 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\pages\_document.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\load-components.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\build\utils.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-middleware.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at __webpack_require__.f.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:198:28)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\webpack-runtime.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\pages\\_document.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\require.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\load-components.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\build\\utils.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './682.js'
+Require stack:
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\pages\_document.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\load-components.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\build\utils.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-middleware.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\router-server.js
+- E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\lib\start-server.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1383:15)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+    at Function._load (node:internal/modules/cjs/loader:1192:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1463:12)
+    at mod.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:147:16)
+    at __webpack_require__.f.require (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:198:28)
+    at E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (E:\AgentCPM\07_一人公司出海项目\12_Micro_SaaS出海\running-training-plan\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\webpack-runtime.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\.next\\server\\pages\\_document.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\require.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\load-components.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\build\\utils.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'E:\\AgentCPM\\07_一人公司出海项目\\12_Micro_SaaS出海\\running-training-plan\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET / 500 in 82ms
+ GET /api/health 200 in 12ms
+ GET /api/features 200 in 16ms
